@@ -41,10 +41,10 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <img src="assets/img/logo.png" alt="" style="width: 80px; height: auto;">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <h5 class="mt-2 me-4" style="color: #04550A;">ENFANT CHERI STUDY CENTRE, INC.</h5>
-      </a>
+      <div class="d-flex align-items-center logo-container">
+        <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+        <h5 id="logoText" class="mt-2 logo-text">ENFANT CHERI STUDY CENTRE, INC.</h5>
+      </div>
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -52,24 +52,6 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#academic">Academic Program</a></li>
           <li><a href="#cherian">The Cherian Pen</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -92,40 +74,6 @@
             <h2>Upholding Academic Excellence and Moral Standards</h2>
           </div>
         </div>
-
-        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Sedare Perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
-            <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="">Nemos Enimade</a></h3>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </section><!-- /Hero Section -->
@@ -165,236 +113,58 @@
 
     </section><!-- /About Section -->
 
-    <!-- Portfolio Section -->
-    <section id="about" class="portfolio section">
+    <!-- Services Section -->
+    <section id="about" class="services section">
+
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>ECSCI</h2>
         <p>About Us</p>
       </div><!-- End Section Title -->
 
       <div class="container">
-        <!-- Portfolio Filters -->
-        <ul class="portfolio-filters isotope-filters text-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="history" class="filter-active">History</li>
-          <li data-filter="mission">Mission/Vision</li>
-          <li data-filter="milestone">Milestone</li>
-        </ul><!-- End Portfolio Filters -->
-
-        <!-- History Section -->
-        <div class="portfolio-content" id="history">
-          <div class="image-container">
-            <img src="assets/img/history/history.jpg" alt="">
-          </div>
-          <!-- Description for History -->
-          <div class="portfolio-description">
-            <p>The idea of putting up a school was conceived by three hardworking teachers: Rose Tampil, Flora Aurea and Nelly Peña. They shared the vision with a retired Public Schools District Supervisor, Mrs. Nila C. Quieta, who helped them turn it into reality. A corporation was born out of a commitment forged by five incorporators whose primary objective is to provide quality education to the children of Butuan City and ultimately, to the whole region of Caraga.</p>
-          </div>
-          <!-- Bootstrap Carousel -->
-          <div id="historyCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="row">
-              <div class="col-md-4"><img src="assets/img/history/history3.jpg" class="d-block w-100" alt="History 1"></div>
-              <div class="col-md-4"><img src="assets/img/history/history2.jpg" class="d-block w-100" alt="History 2"></div>
-              <div class="col-md-4"><img src="assets/img/history/history4.jpg" class="d-block w-100" alt="History 3"></div>
-            </div>
-          </div><!-- End History Carousel -->
-          <div class="portfolio-description">
-            <p>The school started its operation in 1992 with 88 Nursery, Kindergarten 1 and 2 pupils in Mrs. Quieta’s residence. The number of enrollees grew steadily year after year, which pushed the administrators to expand. A more spacious lot in Purok 1A, Upper Doongan, Butuan City was purchased in 1996.</p>
-            <p>The construction of a new school building started in School Year 2003-2004 which has been its permanent home since. Because of its new location, two of the Board of Directors, Nila C. Quieta, and her son, Denilo C. Quieta, voluntarily withdrew their membership from the corporation leaving the three incorporators determined to go on with their endeavors.</p>
-            <p>The school has climbed to excellence in the past years. It has shaped winners in various inter-school contests in the Divisional, Regional, and National Levels. Each pupil carries with them the marks of a true Cherian – God-fearing, respectful, well-mannered, brilliant, and fluent in speaking in English.</p>
-            <div id="historyCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="row">
-                <div class="col-md-4"><img src="assets/img/history/history7.jpg" class="d-block w-100" alt="History 1"></div>
-                <div class="col-md-4"><img src="assets/img/history/history6.jpg" class="d-block w-100" alt="History 2"></div>
-                <div class="col-md-4"><img src="assets/img/history/history8.jpg" class="d-block w-100" alt="History 3"></div>
-              </div>
-            </div><!-- End History Carousel -->
-            <p>In School Year 2010 – 2011, the school branched out to San Francisco, Agusan del Sur. The satellite school bears the same mission-vision, philosophy of education, curriculum, programs, rules and regulations as the mother school. It started with 78 Nursery and Kindergarten pupils and three teachers.</p>
-            <div class="image-container">
-              <img src="assets/img/history/present.jpg" alt="Present">
-            </div>
-            <p>Presently, Enfant Cheri continues to soar to greater heights. Adapting to the “new normal”, it currently offers Modified Home Schooling to its students where they will continue to learn through online classes with trained and equipped teachers who will teach, and with the cooperation of the students’ parents who will provide guidance.</p>
-          </div>
-        </div><!-- End History Section -->
-
-        <!-- Mission/Vision Section -->
-        <div class="portfolio-content" id="mission" style="display: none;">
-          <!-- Description for Mission/Vision -->
-          <div class="portfolio-description">
-            <h2>Mission</h2>
-            <p>Enfant Cheri is committed to the youth’s holistic development in pursuit of academic excellence complemented by a kind and firm discipline exercised within the context of academic freedom and school-parent partnership.
-              It seeks to strengthen the learners’ belief in a Supreme Being regardless of religious denominations, race and ethnicity.</p>
-          </div>
-          <div class="portfolio-description">
-            <h2>Vision</h2>
-            <p>Enfant Cheri Study Centre, Inc. envisions the Cherians to be effective communicators, critical and creative thinkers and globally competitive individuals who are prepared for the next phase of their life’s journey, the tertiary education or the world of work.</p>
-          </div>
-        </div><!-- End Mission Section -->
-
-        <!-- Milestone Section -->
-        <div class="portfolio-content" id="milestone" style="display: none;">
-          <div id="milestoneCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-4"><img src="assets/img/mile.jpg" class="d-block w-100" alt="Milestone 1"></div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Milestone Carousel -->
-
-          <!-- Description for Milestone -->
-          <div class="portfolio-description">
-            <h2>Milestones</h2>
-            <ul>
-              <li>
-                <strong>1991</strong> – The school was conceived in October.
-              </li>
-              <li>
-                <strong>1992</strong>
-                <ul>
-                  <li>Registered with Securities and Exchange Commission on June 9</li>
-                  <li>School opened on June 16</li>
-                  <li>Granted permit to operate preschool on July 2</li>
-                </ul>
-              </li>
-              <li><strong>1994</strong> – Granted Government Recognition for Preschool on Sept. 23</li>
-              <li><strong>1996</strong> – A 2,500 sq m lot in Barangay Upper Doongan was bought</li>
-              <li><strong>1999</strong> – Granted Government Recognition for the Elementary Course on July 29</li>
-              <li><strong>2002</strong> – Construction of the first story of the three-story building started on Nov. 8</li>
-              <li><strong>2005</strong> – Granted Permit to operate High School on March 16</li>
-              <li>
-                <strong>2007</strong>
-                <ul>
-                  <li>Construction of the 2nd story started on January 7</li>
-                  <li>Speech laboratory was installed in May</li>
-                  <li>Science Laboratory was completed in July</li>
-                  <li>Granted Government Recognition for the Secondary Level in December</li>
-                </ul>
-              </li>
-              <li><strong>2010</strong> – The three-storey school building in Butuan City was completed in April</li>
-              <li><strong>2012</strong> – A 2,850 square meter lot in Brgy. Alegria, San Francisco, Agusan del Sur was bought</li>
-              <li><strong>2013</strong> – The construction of a two-storey building in Brgy. Alegria started in January</li>
-              <li><strong>2014</strong> – ECSCI- San Francisco Branch was granted Government Recognition for Preschool in September</li>
-              <li><strong>2015</strong>
-                <ul>
-                  <li>ECSCI- San Francisco Branch was granted Government Recognition for the Elementary Course in July</li>
-                  <li>The school (main campus) was certified as a FAPE (Fund for Assistance to Private Education) member school which gives fifty (50) Grade 7 students the privilege to receive tuition subsidy from the government</li>
-                  <li>The second story of the school building in Brgy. Alegria was constructed for the opening of its Grade 7 level</li>
-                </ul>
-              </li>
-              <li><strong>2016</strong> – ECSCI, SFADS was granted a permit to operate Grades 7 – 9</li>
-              <li><strong>2018</strong> – The 2,251 sq m lot adjacent to ECSCI main campus was purchased in April for expansion</li>
-              <li><strong>2019</strong> – Another lot with an area of 1,700 sq m in Brgy. Ampayon near Camella Prima was purchased for expansion</li>
-            </ul>
-          </div>
-        </div><!-- End Milestone Section -->
-
-      </div><!-- End Container -->
-    </section><!-- /Portfolio Section -->
-
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
 
         <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features-bg.jpg" alt=""></div>
-          <div class="col-lg-6">
 
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Est labore ad</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-            </div><!-- End Features Item-->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/history/history.jpg" alt="">
+              <a href="history.html" class="stretched-link">
+                <h3>History</h3>
+              </a>
+              <p>
+                The idea of putting up a school was conceived by three hardworking teachers: Rose Tampil, Flora Aurea and Nelly Peña. They shared the vision with a retired Public Schools District Supervisor, Mrs. Nila C. Quieta, who helped them turn it into reality. A corporation was born out of a commitment forged by five incorporators whose primary objective is to provide quality education to the children of Butuan City and ultimately, to the whole region of Caraga...
+              </p>
+              <a href="service-details.html" class="read-more">Read More ></a>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Harum esse qui</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div><!-- End Features Item-->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <img src="assets/img/history/history2.jpg" alt="">
+              <a href="mission.html" class="stretched-link">
+                <h3>Mission/Vision</h3>
+              </a>
+              <p>Mission and Vision of Enfant Cheri Study Centre, Inc.</p>
+              <a href="service-details.html" class="read-more">Read More ></a>
+            </div>
+          </div><!-- End Service Item -->
 
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Aut occaecati</h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Beatae veritatis</h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-              </div>
-            </div><!-- End Features Item-->
-
-          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <img src="assets/img/mile.jpg" alt="">
+              <a href="milestone.html" class="stretched-link">
+                <h3>Milestone</h3>
+              </a>
+              <p>Milestones of Enfant Cheri Study Centre, Inc.</p>
+              <a href="service-details.html" class="read-more">Read More ></a>
+            </div>
+          </div><!-- End Service Item -->
         </div>
 
       </div>
 
-    </section><!-- /Features Section -->
+    </section><!-- /Services Section -->
 
     <!-- Services Section -->
     <section id="academic" class="services section">
@@ -444,69 +214,11 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
 
       </div>
 
     </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
 
     <!-- Services Section -->
     <section id="cherian" class="services section">
@@ -524,7 +236,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <img src="assets/img/news/pic1.png" alt="">
-              <a href="service-details.html" class="stretched-link">
+              <a href="news1.html" class="stretched-link">
                 <h3>ECSCI declares winners of CSG election</h3>
               </a>
               <p>
@@ -537,7 +249,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <img src="assets/img/news/pic2.png" alt="">
-              <a href="service-details.html" class="stretched-link">
+              <a href="news2.html" class="stretched-link">
                 <h3>Cherians celebrate Buwan ng Wika</h3>
               </a>
               <p>By: Rych B. Beluan “Wikang Katutubo, Tungo sa sa Isang Bansang Filipino”, was the theme for the Buwan ng Wika Celebration 2019 held last August 30, 2019 in Enfant Cheri...</p>
@@ -548,50 +260,11 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <img src="assets/img/news/pic3.png" alt="">
-              <a href="service-details.html" class="stretched-link">
+              <a href="news3.html" class="stretched-link">
                 <h3>Cherians bag awards in RSPC</h3>
               </a>
               <p>By: Rych B. Bluan Biddy Jo Hansh T. Gaspar, a Grade 6 – Fortitude pupil, paved his way to the National Press Conference (NSPC) after bagging the championship in Copyreading...</p>
               <a href="service-details.html" class="read-more">Read More ></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -601,223 +274,19 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>our Team</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2>ECSCI</h2>
         <p>Contact Us</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.9263033208385!2d125.52245317482662!3d8.95174799019386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c061ee586523%3A0x61743aad2cbff192!2sEnfant%20Cheri%20Study%20Center%20Inc.!5e1!3m2!1sen!2sph!4v1738805881069!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -912,22 +381,14 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> San Franz Branch</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#academic"> Academic Program </a></li>
             </ul>
           </div>
         </div>

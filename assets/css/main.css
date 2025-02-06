@@ -335,6 +335,21 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
+  .logo-text::after {
+    content: "ECSCI"; /* Change text on mobile */
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  .logo-text {
+    font-size: 28px; /* Optional: Adjust font size */
+    visibility: hidden; /* Hide original text */
+  }
+
+  .logo-text::after {
+    visibility: visible; /* Show new text */
+  }
+
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -1789,4 +1804,22 @@ section,
   object-fit: cover;   /* Ensure the image covers the container without distortion */
   display: block;      /* Removes space below the image */
   margin: 0 auto;      /* Center the image horizontally */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust spacing */
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+}
+
+.logo-text {
+  font-weight: 700;
+  color: #04550A;
+  margin: 0; /* Remove extra spacing */
+  font-size: 20px; /* Adjust size if needed */
 }
