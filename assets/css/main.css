@@ -335,29 +335,17 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
-  .logo-text::after {
-    content: "ECSCI"; /* Change text on mobile */
-    display: inline-block;
-    font-weight: 700;
-  }
-
-  .logo-text {
-    font-size: 28px; /* Optional: Adjust font size */
-    visibility: hidden; /* Hide original text */
-  }
-
-  .logo-text::after {
-    visibility: visible; /* Show new text */
-  }
-
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
+    color: #04550A;
+    font-size: 40px;
+    line-height: 1;
+    margin-right: 0; /* Remove margin if unnecessary */
     cursor: pointer;
     transition: color 0.3s;
-  }
+    position: absolute;
+    right: 20px; /* Move it to the rightmost side */
+    top: 20px; /* Adjust position for better alignment */
+}
 
   .navmenu {
     padding: 0;
@@ -371,13 +359,14 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
+    height: 38%;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
+}
 
   .navmenu a,
   .navmenu a:focus {
@@ -1842,6 +1831,24 @@ section,
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) { /* Targeting devices with width 768px or smaller */
+  .news-strip {
+    width: 100% !important; /* Ensure the width is retained on mobile */
+    padding: 10px; /* Adjust padding if needed for mobile */
+  }
+
+  .news-text h3 {
+    color: #04550A !important;
+  }
+}
+
+@media (min-width: 769px) { /* For larger screens (desktops, tablets) */
+  .news-strip {
+    width: 100% important; /* Ensures the width fills the container */
+    margin-bottom: 15px; /* Optional margin between news strips */
+  }
+}
+
 .news-content {
   display: flex;
   gap: 1rem;
@@ -1852,6 +1859,12 @@ section,
   height: auto;
   border-radius: 4px;
   object-fit: cover;
+}
+
+.read-mores {
+  margin-left: auto; /* Push button to the right dynamically */
+  margin-right: auto; /* Center align */
+  text-align: center;
 }
 
 .news-text {
@@ -1892,4 +1905,57 @@ section,
 
 .read-mores .btn:hover {
   color: #059652;
+}
+
+@media (max-width: 1199px) {
+  /* Hide the '>' symbol by default */
+  .arrow-link {
+      display: block;
+  }
+
+  /* Make sure it's not shown in desktop view */
+  .arrow-link {
+      display: none;
+  }
+
+  /* Add styles for showing the '>' symbol in mobile view */
+  .navmenu .arrow-link {
+      display: inline-block;
+      font-size: 30px;
+      color: #04550A; /* Adjust color if needed */
+      padding: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+  }
+
+  .arrow-link:active,
+    .arrow-link:focus {
+        color: inherit; /* Keeps the original color */
+        outline: none;  /* Removes focus outline */
+    }
+}
+
+.justify-text {
+  text-align: justify; /* Justify the text for better distribution */ 
+}
+
+/* Hide "Tap to read more" by default */
+.tap-to-read {
+  display: none;
+}
+
+/* Show "Tap to read more" and hide "Read More" on mobile */
+@media (max-width: 768px) {
+  .read-more {
+    display: none; /* Hide "Read More >" */
+  }
+
+  .tap-to-read {
+    display: inline-block; /* Show "Tap to read more" */
+    font-size: 16px;
+    font-weight: bold;
+    color: #04550A;
+    text-decoration: none;
+    margin-top: 18px;
+  }
 }
