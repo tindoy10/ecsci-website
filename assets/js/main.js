@@ -227,16 +227,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-function updateLogoText() {
-  let logoText = document.getElementById("logoText");
-  if (window.innerWidth <= 768) {
-    logoText.textContent = "ECSCI";
-  } else {
-    logoText.textContent = "ENFANT CHERI STUDY CENTRE, INC.";
-  }
-}
-
-// Run on load and resize
-window.addEventListener("load", updateLogoText);
-window.addEventListener("resize", updateLogoText);

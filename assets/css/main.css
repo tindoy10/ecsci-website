@@ -274,6 +274,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-weight: 500;
   }
 
   .navmenu .dropdown ul {
@@ -333,6 +334,20 @@ h6 {
   }
 }
 
+@media (max-width: 767px) {
+  .logo-text {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .logo-text::before {
+    content: "ECSCI";
+    visibility: visible;
+    position: absolute;
+    margin-top: 10px;
+  }
+}
+
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -359,7 +374,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    height: 38%;
+    height: 44%;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
     overflow-y: auto;
@@ -466,7 +481,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #132B2D;
   font-size: 14px;
   position: relative;
 }
@@ -1831,34 +1846,43 @@ section,
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) { /* Targeting devices with width 768px or smaller */
-  .news-strip {
-    width: 100% !important; /* Ensure the width is retained on mobile */
-    padding: 10px; /* Adjust padding if needed for mobile */
-  }
-
-  .news-text h3 {
-    color: #04550A !important;
-  }
-}
-
-@media (min-width: 769px) { /* For larger screens (desktops, tablets) */
-  .news-strip {
-    width: 100% important; /* Ensures the width fills the container */
-    margin-bottom: 15px; /* Optional margin between news strips */
-  }
-}
-
 .news-content {
   display: flex;
   gap: 1rem;
 }
 
 .news-content img {
-  width: 100px;
-  height: auto;
-  border-radius: 4px;
-  object-fit: cover;
+  width: 120px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Prevent distortion */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .news-content {
+    display: flex;
+    flex-direction: row ; /* Ensure horizontal layout on mobile */
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+  }
+
+  .news-content img {
+    width: 150px; /* Smaller image on mobile */
+    height: 195px; /* Maintain square ratio */
+  }
+
+  .news-text {
+    flex: 1; /* Allow text to take remaining space */
+  }
+
+  .news-text p:last-child { 
+    display: none; /* Hide the description text on mobile */
+  }
+
+  .read-mores {
+    margin-left: auto; /* Align Read More button properly */
+  }
 }
 
 .read-mores {
@@ -1958,4 +1982,18 @@ section,
     text-decoration: none;
     margin-top: 18px;
   }
+}
+
+.section-card img {
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.section-card:hover img {
+  opacity: 0.8;
+}
+
+.section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
 }
