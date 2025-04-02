@@ -487,7 +487,7 @@ h6 {
 }
 
 .footer .footer-top {
-  padding: 50px 0;
+  padding: 50px 0 10px 0;
   background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
 }
 
